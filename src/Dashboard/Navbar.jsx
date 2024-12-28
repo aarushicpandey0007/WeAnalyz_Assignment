@@ -8,6 +8,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 
 const Navbar = () => {
     return (
+        
         <div className="navbar">
             <div className="navbar-left">
                 <h1 className="title">Helpdesk</h1>

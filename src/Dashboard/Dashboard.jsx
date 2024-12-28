@@ -2,8 +2,7 @@ import { Box, Grid, Typography, Paper } from "@mui/material";
 import React from "react";
 import SideProfile from './SideProfile'; // Adjust the path if necessary
 import Navbar from './Navbar'; // Adjust the path if necessary
-
-import AttachFileIcon from '@mui/icons-material/AttachFile';
+import NewTicket from "./NewTicket";
 
 const Dashboard = () => {
     return (
@@ -101,3 +100,4 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
