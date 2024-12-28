@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signinDiv {
+    background-color: #55D6C2;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.signBox {
+    height: 60rem;
+    width: 100rem;
+    background-color: #A2E2D8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signin_head {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 6rem;
+}
+
+.signBox form {
+    height: 22rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signBox form input {
+    width: 30em;
+    font-size: 1.5rem;
+    padding: 0.7rem 1rem;
+    margin-bottom: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.signBox form input:focus {
+    border-color: #03CC17;
+}
+
+
+.signBox form button {
+    width: 12em;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    background-color: #03CC17;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.signBox form button:hover {
+    background-color: #028a5d;
+}
+
+.forgetLink,
+.signupLink {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.forgetLink {
+    color: #dc3545;
+    margin-right: 2rem;
+}
+
+.signupLink {
+    color: #000;
+}
