@@ -5,11 +5,6 @@
     background-color:#55D6C2; /* Material-UI primary color */
     padding: 10px 20px;
     color: rgb(0, 40, 0);
-    height:rem;
-}
-
-.navbar-left {
-    flex: 1; /* Takes up the left side */
 }
 
 .title {
