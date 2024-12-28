@@ -5,47 +5,52 @@
 }
 
 /* SIDEBAR CSS */
-
-.sidebar {
-    background-color: #E0DFDF;
-    height: 85vh;
-    color: black;
-    z-index: 2;
-    height: calc(100vh - 9rem);
-} 
 .sidebar {
     display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    align-items: center; /* Center items horizontally */
-    background-color: #f8f9fa; /* Light gray background */
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
     padding: 20px;
-    height: 100vh; /* Full viewport height */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    height: calc(100vh - 9rem); /* Consistent height calculation */
+    position: sticky;
+    top: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    width: 100%;
+     /* Ensures items take full width */
 }
 
 .sidebar-item {
     display: flex;
     align-items: center;
-    margin: 15px 0; /* Space between items */
-    width: 100%; /* Full width of sidebar */
-    justify-content: center; /* Center content */
+    justify-content: center;
+    margin: 15px 0;
+    width: 100%;
+
 }
 
 .icon {
     width: 30px;
     height: 30px;
-    margin-right: 10px; /* Space between icon and text */
+    margin-right: 10px;
 }
-
+.sideLinks{
+    text-decoration:none;
+}
 .sidebarLinks {
     font-size: 1.2rem;
     color: #333;
-    text-decoration: none;
+    text-decoration:none;
     font-weight: bold;
+    transition: color 0.3s;
+
 }
 
 .sidebarLinks:hover {
-    color: #007bff; /* Highlight on hover */
+    color: #007bff;
 }
 
 .loginBtn {
@@ -54,47 +59,28 @@
     font-size: 1rem;
 }
 
-.sideLinks {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit text color */
-}
-
-
-.sidebar ul {
-    list-style: none;
-}
-
 .sidebar img {
     height: 2rem;
 }
 
-.sideLinks {
-    text-decoration: none;
-    color: black;
-}
-
-.sidebarLinks {
-    font-size: 1.6rem;
-}
-
-.loginBtn {
-    width: 8rem;
-    font-size: 1.5rem;
-}
-
 /* DASHBOARD CSS */
-
 .heading {
     margin: 3rem;
     font-size: 3rem;
+    text-align: center; /* Center-align heading */
 }
 
 .box {
-    color: #05386B;
+    color: #05386B;  
     height: 27.3rem;
     width: 24.8rem;
     border-radius: 2rem;
     margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #box-1 {
@@ -114,8 +100,7 @@
 }
 
 .box p {
-    margin-top: 2rem;
-    margin-bottom: 7rem;
+    margin-top: 1rem;
     font-size: 2rem;
 }
 
@@ -124,13 +109,14 @@
 }
 
 /* NewTicket CSS */
-
 .new_ticket {
     font-size: 2rem;
 }
 
 .new_ticket label {
     font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+    display: block;
 }
 
 .new_ticket input,
@@ -139,17 +125,26 @@ textarea {
     outline: none;
     background-color: #DADADA;
     border-radius: 0.6rem;
+    padding: 0.8rem;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .new_ticket_btn {
     border: none;
     border-radius: 0.6rem;
     background-color: #55D6C2;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
 
+.new_ticket_btn:hover {
+    background-color: #4cb0a3;
 }
 
 /* MyTicket CSS */
-
 .my_ticket {
     font-size: 1.6rem;
 }
@@ -162,10 +157,19 @@ textarea {
 
 .data div {
     background-color: #DADADA;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
 }
 
 .starIcon {
     color: #949494;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.starIcon:hover {
+    color: #FFC632;
 }
 
 .coloredStar {
@@ -175,14 +179,23 @@ textarea {
 .inProgess {
     background: #5CDB95 !important;
     border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-align: center;
 }
 
 .onHold {
     background: #05386B !important;
     border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-align: center;
 }
 
 .closed {
     background: #494949 !important;
     border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-align: center;
 }
