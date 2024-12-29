@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './SignUpComponent.css';
+import './ForgotP.css';
 
 const SignUpComponent = () => {
   const [email, setEmail] = useState('');
@@ -24,7 +24,7 @@ const SignUpComponent = () => {
             required
           />
           <button type="submit" className="signin-btn">
-            Sign in
+            Submit
           </button>
           <button type="button" className="signup-btn">
             Sign up
