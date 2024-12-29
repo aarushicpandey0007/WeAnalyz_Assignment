@@ -21,7 +21,7 @@ function Signin() {
                     <button type="submit">Sign In</button>
                     <div className="row">
                         <Link to="/forget-password" className="forgetLink">
-                            Forget password
+                            Forgot password
                         </Link>
                         <Link to="/Signup" className="signupLink">
                             Signup
