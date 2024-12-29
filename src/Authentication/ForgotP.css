@@ -15,6 +15,10 @@
     width: 1150px; /* Increased width */
      /* Full width for smaller screens */
     min-height: 650px; /* Increased height */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
     
     
@@ -34,11 +38,14 @@
     gap: 15px; /* Spacing between inputs and buttons */
     text-align: center;
   }
-  
+  .forgotinput{
+    width: 150%;
+    align-self: center;
+  }
   input {
     width: 100%;
     padding: 12px;
-    border: 1px solid #e0e0e0;
+    /* border: 1px solid #e0e0e0; */
     border-radius: 4px; /* Rounded corners */
     font-size: 16px;
     outline: none;
@@ -46,10 +53,7 @@
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
   }
   
-  input:focus {
-    border-color: #40e0d0;
-    box-shadow: 0 0 0 3px rgba(64, 224, 208, 0.2); /* Slightly larger shadow */
-  }
+ 
   
   button {
     width: 100%;
@@ -90,7 +94,7 @@
     background-color: #007bff; /* Blue color */
     border: none;
     cursor: pointer;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
   
