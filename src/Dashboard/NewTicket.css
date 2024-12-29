@@ -42,7 +42,8 @@
 /* Label styles */
 .form-label {
     font-size: 1rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin:0  10px;
 }
 
 /* Input and textarea styles */
