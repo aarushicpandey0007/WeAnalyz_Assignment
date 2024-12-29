@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import './ForgotP.css';
+import { useNavigate } from 'react-router-dom';
 
 const SignUpComponent = () => {
   const [email, setEmail] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
+    navigate('/');
     e.preventDefault();
     console.log('Email submitted:', email);
   };
@@ -16,14 +19,14 @@ const SignUpComponent = () => {
           Don't worry! Enter your email below and we will send you a link to change password.
         </p>
         <form onSubmit={handleSubmit}>
-          <input
+          <input className='forgotinput'
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
             required
           />
-          <button type="submit" className="signin-btn">
+          <button type="submit" className="signin-btn" >
             Submit
           </button>
           <button type="button" className="signup-btn">
